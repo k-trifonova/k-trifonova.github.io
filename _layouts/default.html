@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<title>{{ page.title }}</title>
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<!-- link rel="icon" href="/img/bacteria.ico" -->
+		<!-- FOR LATER, VERIFY SITE WITH GOOGLE: meta name="google-site-verification" content="RIvn8sP16jiMLaGGnF1h_B-bjoIBx6Go_YZU3GL_3-I"/ -->
+		<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    }
+  };
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<!--
+<script> // commenting out because github's api is blocking the request if there are too many...
+  async function fetchLatestCommit() {
+    const response = await fetch('https://api.github.com/repos/alyulina/alyulina.github.io/commits');
+    const data = await response.json();
+    const latestCommitHash = data[0].sha.substring(0, 7); // get the first 7 characters of the commit hash
+    const commitLink = `https://github.com/alyulina/alyulina.github.io/`;
+    document.getElementById('commit-link').innerHTML = `<a href="${commitLink}" target="_blank">${latestCommitHash}</a>`;
+  }
+  fetchLatestCommit();
+</script>
+-->
+	</head>
+		<body>
+			<div class="container">
+				<div class="blurb">
+					<h1>Kristina Trifonova</h1>
+				</div>
+			</div>
+			<div class="container">
+				{{ content }}
+				<br>
+				<br>
+				<br>
+				<br>
+			</div>
+			<!--
+			<footer class="footer">
+					<p><img src="/img/commit.png" alt="github commit icon" style="height:18px; vertical-align: middle; margin-right:6px; "><span id="commit-link">Loading...</span></p>
+			</footer>
+		-->
+		</body>
+	</html>

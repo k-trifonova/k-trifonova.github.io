@@ -75,12 +75,12 @@ ul li::marker {
 
 .about-wrapper {
   display: flex;
-  align-items: flex-start; /* align children to top */
+  align-items: flex-start;
   justify-content: space-between;
   gap: 50px;
   max-width: 800px;
-  margin: 60px auto 0 auto;
-  padding: 0 40px;
+  margin: 60px auto 0 auto; /* centers wrapper */
+  padding: 0; /* remove horizontal padding */
 }
 
 .about-right img {

@@ -77,7 +77,7 @@ ul li::marker {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 60px;
+  gap: 50px;
   max-width: 1000px;
   margin: 80px auto;
   padding: 0 40px;
@@ -85,10 +85,6 @@ ul li::marker {
 
 .about-left {
   flex: 1;
-  background-color: #f9f9f9; /* optional box background */
-  padding: 40px;
-  border-radius: 8px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
 }
 
 .about-left h1 {
@@ -103,27 +99,25 @@ ul li::marker {
 }
 
 .about-right img {
-  width: 350px;
+  width: 250px;
   height: auto;
-  border-radius: 6px;
+  aspect-ratio: 1/1;
+  border-radius: 4px;
+  margin: 50px auto 20px;
   object-fit: cover;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: block;
 }
 
 /* Responsive layout */
 @media (max-width: 900px) {
   .about-wrapper {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
-    gap: 40px;
-  }
-
-  .about-left {
-    width: 100%;
-    text-align: left;
+    gap: 30px;
   }
 
   .about-right img {
     width: 60%;
+    margin-top: 20px;
   }
 }

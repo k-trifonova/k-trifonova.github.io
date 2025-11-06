@@ -100,7 +100,7 @@ ul li::marker {
   border-radius: 4px;
   object-fit: cover;
   object-position: top center;
-  margin-top: -10px; /* nudges image up a bit */
+  margin-top: 20px; /* nudges image up a bit */
   display: block;
 }
 

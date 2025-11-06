@@ -75,12 +75,12 @@ ul li::marker {
 
 .about-wrapper {
   display: flex;
-  align-items: flex-start;
+  align-items: center; /* centers vertically */
   justify-content: space-between;
-  gap: 40px;
-  width: 100%; /* matches body width */
-  margin: 20px 0 0 0; /* slightly closer to nav */
-  padding: 0;
+  gap: 50px;
+  max-width: 800px;
+  margin: 60px auto 0 auto;
+  padding: 0 40px;
 }
 
 .about-left {

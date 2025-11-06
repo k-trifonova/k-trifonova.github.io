@@ -42,6 +42,24 @@ hr { border: none; height: 1px; color: #333; background-color: #333; }
 .figure-container img { width: 100%; max-width: 480px; height: auto; }
 .legend { font-size: 0.95em; max-width: 480px; }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.gallery-item p {
+  text-align: center;
+  margin-top: 8px;
+  font-style: italic;
+}
+
 @media screen and (min-width: 1024px) {
     .figure-container { flex-direction: row; justify-content: flex-start; align-items: flex-start; }
     .figure-container .figure { flex: 1; text-align: left; }

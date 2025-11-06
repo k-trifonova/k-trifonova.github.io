@@ -66,3 +66,9 @@ hr { border: none; height: 1px; color: #333; background-color: #333; }
     .figure-container .legend { flex: 1; max-width: 400px; }
     .legend { margin-top: 1em }
 }
+
+ul li::marker {
+  content: "✼ ";   /* Replace default • with any symbol or emoji */
+  color: black;  /* Optional: color the bullet */
+  font-size: 1.25em;  /* Optional: adjust bullet size */
+}

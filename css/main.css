@@ -75,12 +75,12 @@ ul li::marker {
 
 .about-wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* aligns top edges */
   justify-content: space-between;
   gap: 50px;
-  max-width: 1000px;
-  margin: 80px auto;
-  padding: 0 40px;
+  max-width: 800px; /* match your site's header width */
+  margin: 60px auto 0 auto; /* moves the block up on the page */
+  padding: 0 40px; /* same horizontal padding as header */
 }
 
 .about-left {
@@ -103,7 +103,7 @@ ul li::marker {
   height: auto;
   aspect-ratio: 1/1;
   border-radius: 4px;
-  margin: 50px auto 20px;
+  margin-top: 0; /* aligns with top of text */
   object-fit: cover;
   display: block;
 }
@@ -114,6 +114,7 @@ ul li::marker {
     flex-direction: column-reverse;
     align-items: center;
     gap: 30px;
+    max-width: 90%;
   }
 
   .about-right img {
@@ -121,3 +122,4 @@ ul li::marker {
     margin-top: 20px;
   }
 }
+

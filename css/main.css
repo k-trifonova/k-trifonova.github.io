@@ -112,7 +112,7 @@ ul li::marker {
 /* RESPONSIVE: MOBILE */
 @media (max-width: 900px) {
   .about-wrapper {
-    flex-direction: column-reverse; /* text below image */
+    flex-direction: column; /* text above image */
     align-items: center;
     gap: 20px;
     width: 100%;

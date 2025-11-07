@@ -109,10 +109,9 @@ ul li::marker {
   display: block;
 }
 
-/* RESPONSIVE: MOBILE */
 @media (max-width: 900px) {
   .about-wrapper {
-    flex-direction: column; /* text above image */
+    flex-direction: column;
     align-items: center;
     gap: 20px;
     width: 100%;
@@ -158,19 +157,3 @@ ul li::marker {
   color: #333;
   margin-top: 0; /* no unnecessary gap since no header */
 }
-
-/* Responsive layout */
-@media (max-width: 900px) {
-  .about-wrapper {
-    flex-direction: column-reverse;
-    align-items: center;
-    gap: 30px;
-    width: 100%;
-  }
-
-  .about-right img {
-    width: 60%;
-    height: auto;
-    margin-top: 20px;
-  }
-} */
